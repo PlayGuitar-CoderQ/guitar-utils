@@ -12,11 +12,11 @@
   },
   "devDependencies": {
     "prettier": "latest",
+    "tsup": "^6.5.0",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@7.17.1"
 }
