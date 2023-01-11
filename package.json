@@ -9,12 +9,21 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.0",
     "prettier": "latest",
     "tsup": "^6.5.0",
     "turbo": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=14.0.0"
