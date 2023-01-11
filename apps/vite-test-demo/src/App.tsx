@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import { isArray } from '@guitar/utils';
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
   const [testList] = useState([]);
+
+  console.log(isArray(testList));
 
   return (
     <div className="App">
