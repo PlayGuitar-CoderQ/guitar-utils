@@ -15,3 +15,7 @@ export const isString = (val: unknown): val is string => {
 export const isFunction = (val: unknown): val is Function => {
   return typeof val === 'function';
 }
+
+export const isBoolean = (val: unknown): val is boolean => {
+  return is(val, "Boolean")
+}
