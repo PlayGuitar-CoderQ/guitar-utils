@@ -1,5 +1,11 @@
 # @guitar/utils
 
+## 1.0.2
+
+### Patch Changes
+
+- 本次版本更新了两个 is 方法, isBoolean 和 isFunction 😬
+
 ## 1.0.1
 
 ### Patch Changes

@@ -19,3 +19,7 @@ export const isFunction = (val: unknown): val is Function => {
 export const isBoolean = (val: unknown): val is boolean => {
   return is(val, "Boolean")
 }
+
+export const isDate = (val: unknown): val is Date => {
+  return is(val, 'Date');
+}
