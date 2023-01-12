@@ -1,7 +1,12 @@
 import { assert, expect, test } from 'vitest';
 
-import { isArray } from '@guitar/utils';
+import { isArray, isFunction } from '@guitar/utils';
 
 test("isArray", () => {
   expect(isArray([])).toBe(true);
+})
+
+test("isFunction", () => {
+  const test = () => {};
+  expect(isFunction(test)).toBe(true);
 })
