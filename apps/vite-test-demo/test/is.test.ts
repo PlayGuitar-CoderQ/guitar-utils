@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest';
 
-import { isArray, isFunction, isBoolean } from '@guitar/utils';
+import { isArray, isFunction, isBoolean, isDate } from '@guitar/utils';
 
 test("isArray", () => {
   expect(isArray([])).toBe(true);
@@ -14,4 +14,8 @@ test("isFunction", () => {
 test("isBoolean", () => {
   const isShow = true;
   expect(isBoolean(isShow)).toBe(true);
+})
+
+test("isDate", () => {
+  expect(isDate(new Date())).toBe(true);
 })
