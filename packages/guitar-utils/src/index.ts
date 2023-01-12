@@ -11,3 +11,7 @@ export const isArray = (val: any) => {
 export const isString = (val: unknown): val is string => {
   return is(val, 'String');
 }
+
+export const isFunction = (val: unknown): val is Function => {
+  return typeof val === 'function';
+}
