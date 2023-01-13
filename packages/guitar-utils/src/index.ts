@@ -4,7 +4,7 @@ export function is(val: unknown, type: string) {
   return toString.call(val) === `[object ${type}]`;
 }
 
-export const isArray = (val: any) => {
+export const isArray = (val: unknown): boolean => {
   return Array.isArray(val);
 }
 
