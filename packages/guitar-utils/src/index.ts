@@ -23,3 +23,7 @@ export const isBoolean = (val: unknown): val is boolean => {
 export const isDate = (val: unknown): val is Date => {
   return is(val, 'Date');
 }
+
+export function isDef<T = unknown>(val?: T): val is T {
+  return typeof val !== 'undefined';
+}
