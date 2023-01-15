@@ -31,3 +31,7 @@ export function isDef<T = unknown>(val?: T): val is T {
 export function isUnDef<T = unknown>(val?: T): val is T {
   return !isDef(val);
 }
+
+export function isNull(val: unknown): val is null {
+  return val === null;
+}
