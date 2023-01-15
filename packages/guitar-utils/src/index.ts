@@ -4,7 +4,7 @@ export function is(val: unknown, type: string) {
   return toString.call(val) === `[object ${type}]`;
 }
 
-export const isArray = (val: any) => {
+export const isArray = (val: unknown): boolean => {
   return Array.isArray(val);
 }
 
@@ -26,4 +26,12 @@ export const isDate = (val: unknown): val is Date => {
 
 export function isDef<T = unknown>(val?: T): val is T {
   return typeof val !== 'undefined';
+}
+
+export function isUnDef<T = unknown>(val?: T): val is T {
+  return !isDef(val);
+}
+
+export function isNull(val: unknown): val is null {
+  return val === null;
 }
